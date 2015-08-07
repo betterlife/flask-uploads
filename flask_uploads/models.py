@@ -1,5 +1,8 @@
+import sys
 from .extensions import db, resizer
 
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
 class Upload(db.Model):
     __tablename__ = 'upload'
